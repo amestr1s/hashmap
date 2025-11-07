@@ -1,4 +1,5 @@
 import { hashMap } from "./hm.js";
+import { hashSet } from "./hs.js";
 
 const test = new hashMap;
 
@@ -48,3 +49,49 @@ console.log(test.entries());
 test.clear()
 
 console.log(test.entries());
+
+
+const setTest = new hashSet;
+
+setTest.add('apple')
+setTest.add('banana')
+setTest.add('carrot')
+setTest.add('dog')
+setTest.add('elephant')
+setTest.add('frog')
+setTest.add('grape')
+setTest.add('hat')
+setTest.add('ice cream')
+setTest.add('jacket')
+setTest.add('kite')
+setTest.add('lion')
+
+console.log(setTest.length());
+
+setTest.add('apple')
+
+console.log(setTest.length());
+
+setTest.add('moon')
+
+console.log(setTest.length());
+
+console.log(setTest.keys());
+
+setTest.add('grape')
+setTest.add('hat')
+setTest.add('ice cream')
+
+console.log(setTest.has("hat"));
+
+console.log(setTest.length());
+
+console.log(setTest.remove("hat"));
+
+console.log(setTest.length());
+
+console.log(setTest.keys());
+
+setTest.clear()
+
+console.log(setTest.keys());
